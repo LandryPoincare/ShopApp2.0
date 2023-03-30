@@ -5,47 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css">
     <title>ShopApp 2.0</title>
 </head>
 
 <body>
-    <div class="container">
 
-        <h1>Hello world !</h1>
-        <p>
-            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor inventore veritatis ipsa
-                saepe. Ratione hic omnis architecto fuga adipisci ducimus, enim odit illo aut officiis nulla quasi
-                voluptatem aperiam?</span>
-            <span>Veniam vero quibusdam aliquam, numquam possimus illo nam magni nesciunt? Enim beatae sapiente fugiat
-                iste quae esse minus perspiciatis, quibusdam at consectetur reiciendis, voluptas rerum earum numquam!
-                Quia, fuga ad?</span>
-            <span>Est sint dignissimos error aspernatur neque dolorum adipisci? Ex modi blanditiis quis ratione fugit
-                sunt molestiae! Necessitatibus quas possimus, perferendis, temporibus cupiditate atque accusantium dolor
-                eos, perspiciatis eaque sint beatae.</span>
-            <span>Dolorum ullam in labore perspiciatis atque omnis asperiores saepe laudantium ea, voluptate quo
-                consequuntur. Veniam vitae ut accusantium officia nesciunt veritatis voluptates quasi reprehenderit
-                provident, non, commodi exercitationem, consequatur asperiores?</span>
-            <span>Quia asperiores iste ad dolores ducimus inventore, neque perferendis quod esse tempore ipsum veniam
-                deserunt fuga quibusdam facere, beatae laboriosam odio nobis accusamus cum. Doloribus nulla dicta
-                eveniet unde assumenda.</span>
-            <span>Vel, dolores asperiores enim optio ut sequi quod perspiciatis, cum temporibus, quas repudiandae
-                debitis esse. Repellendus inventore velit adipisci? Numquam, neque. Modi, nulla eveniet minima commodi
-                assumenda odio voluptatem nihil?</span>
-            <span>Explicabo nulla quas nostrum distinctio culpa voluptatum repellat rerum autem alias. Incidunt fuga
-                laboriosam corporis, ab qui exercitationem dolores sunt quod ratione voluptates quo aliquid odit rerum,
-                amet ut. Officia.</span>
-            <span>Dicta aliquid cum voluptatibus illo a consequuntur laudantium libero, sunt ipsam, totam dolorem hic
-                saepe natus odio ea pariatur vitae debitis corporis molestiae eos. Consequatur dolorem officia molestias
-                officiis ducimus.</span>
-            <span>Reiciendis ab, non aut accusantium explicabo quaerat enim alias qui repellat modi incidunt adipisci,
-                quasi laboriosam error cum? Animi nesciunt a magni tempore. Quam accusamus officiis ipsam accusantium,
-                similique nam?</span>
-            <span>Laudantium numquam adipisci, eaque, facere sunt excepturi aperiam provident quidem veniam
-                necessitatibus, quae quod ex natus porro explicabo officia voluptatem eius? Neque dolorem nostrum
-                distinctio voluptates obcaecati voluptatem ducimus ut!</span>
-        </p>
-    </div>
+    <header>
+        <div class="banner-promo-container py-15">
+            <div class="container">
+                <div class="banner-promo tc">
+                    Get Up to 40% New-Season Style <span class="men">Men</span> <span class="women">Women</span> *
+                    Limited time only
+                </div>
+            </div>
+        </div>
+        <div class="nav-top-container">
+            <div class="container">
+                <div class="nav-top flex jcsb gap-15 py-15">
+                    <div class="nav-message">FREE RETURN. STANDARD SHIPPING ORDER *99+</div>
+                    <div class="nav-items">
+                        <ul class="flex jcc gap-20">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">My Wichlist</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-10">
+                        <div class="nav-country ">
+                            <select name="country" id="country">
+                                <option value="france">FRA</option>
+                                <option value="usa">USA</option>
+                                <option value="rus">RUS</option>
+                            </select>
+                        </div>
+                        <div class="nav-currency ">
+                            <select name="currency" id="currency">
+                                <option value="EUR">EUR</option>
+                                <option value="USD">USD</option>
+                                <option value="XAF">XAF</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="nav-social-icon flex gap-20">
+                        <div class="social-icon-item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="social-icon-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="social-icon-item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="website-details-container">
+            <div class="container">
+                <div class="website-details flex aic gap-10">
+
+                    <div class="website-logo logo">
+                        <h2>
+                            <a href="#">ShopApp 2.0</a>
+                        </h2>
+                    </div>
+                    <div class="website-search-bar flex flex-1">
+                        <input type="search" name="product-filter" id="product-filter" class="flex-1 px-20" placeholder="Search product ...">
+                        <select name="categories" id="categories">
+                            <option value="">All Categories</option>
+                            <option value="">Robes</option>
+                            <option value="">Jupes</option>
+                            <option value="">Culottes</option>
+                            <option value="">T-Shirt</option>
+                            <option value="">Chemises</option>
+                        </select>
+                        <div class="search-icon aic px-20 flex">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                    <div class="website-call-us flex aic gap-10">
+                        <div class="call-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="call-message">
+                            <h3>Call Us</h3>
+                            <a href="tel:+123456789">+123456789</a>
+                        </div>
+                    </div>
+                    <div class="website-icon flex gap-10">
+                        <div class="website-icon-item"><i class="bi bi-person"></i></div>
+                        <div class="website-icon-item"><i class="bi bi-bag-heart"></i></div>
+                        <div class="website-icon-item"><i class="bi bi-cart"></i></div>
+                        <div class="website-icon-item"><i class="fa-solid fa-angle-left"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
 </body>
 
 </html>
